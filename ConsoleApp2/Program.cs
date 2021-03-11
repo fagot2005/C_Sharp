@@ -9,8 +9,7 @@ namespace ConsoleApp2
         static void Main(string[] args)
         {
             int ligthArray = 1000;
-            List<int> list = new List<int>();
-            list.Add(1); list.Add(2); list.Add(3);
+            List<int> list = new List<int>() { 1, 2, 3 };
             for (int i = 5; i < ligthArray; i = i + 2)
             {
                 bool emptyNumger = true;
