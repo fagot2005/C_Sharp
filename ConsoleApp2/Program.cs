@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections;
+using System.Collections.Generic;
 
 namespace ConsoleApp2
 {
@@ -8,7 +9,7 @@ namespace ConsoleApp2
         static void Main(string[] args)
         {
             int ligthArray = 1000;
-            ArrayList list = new ArrayList();
+            List<int> list = new List<int>();
             list.Add(1); list.Add(2); list.Add(3);
             for (int i = 5; i < ligthArray; i = i + 2)
             {
@@ -24,10 +25,9 @@ namespace ConsoleApp2
                 if (emptyNumger)
                     list.Add(i);
             }
-            foreach (object o in list)
+            foreach (int o in list)
             {
-                int kwadrat = (int)o;
-                Console.WriteLine(string.Format("{0} - {1}", o, kwadrat*kwadrat));
+                Console.WriteLine(string.Format("{0} - {1}", o, o * o));
             }
             Console.ReadKey();
         }
