@@ -6,11 +6,17 @@ namespace Person_And_BankAccaunt
 {
     class BankAccaunt
     {
-        public string id;
-        public Person persons;
-        public string carency;
-        public double balans;
+        public string Id;
+        public Person Persons;
+        public string Carency;
+        public double Balans;
 
-        public 
+        public BankAccaunt(string Id, Person Persons, string Carency, double Balans)
+        {
+            this.Id = Id;
+            this.Persons = Persons;
+            this.Carency = Carency;
+            this.Balans = Balans;
+        }
     }
 }
