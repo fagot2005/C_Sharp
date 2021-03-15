@@ -4,18 +4,18 @@ using System.Text;
 
 namespace Person_And_BankAccaunt
 {
-    class BankAccaunt
+    public class BankAccaunt
     {
-        public string Id;
-        public Person Persons;
-        public string Carency;
+        public string id;
+        public Person person;
+        public string carency;
         public double Balans;
 
         public BankAccaunt(string Id, Person Persons, string Carency, double Balans)
         {
-            this.Id = Id;
-            this.Persons = Persons;
-            this.Carency = Carency;
+            this.id = Id;
+            this.person = Persons;
+            this.carency = Carency;
             this.Balans = Balans;
         }
     }

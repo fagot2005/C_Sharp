@@ -8,15 +8,15 @@ namespace Person_And_BankAccaunt
     {
         public Person(string id, string name, string gender, byte age)
         {
-            Id = id;
-            Name = name;
-            Gender = gender;
-            Age = age;
+            this.id = id;
+            this.name = name;
+            this.gender = gender;
+            this.age = age;
         }
 
-        public string Id { get; set; }
-        public string Name { get; set; }
-        public string Gender { get; set; }
-        public byte Age { get; set; } 
+        public string id { get; set; }
+        public string name { get; set; }
+        public string gender { get; set; }
+        public byte age { get; set; } 
     }
 }
