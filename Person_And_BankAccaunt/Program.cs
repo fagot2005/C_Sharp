@@ -39,7 +39,7 @@ namespace Person_And_BankAccaunt
             agePersone = byte.Parse(Console.ReadLine());
             //Program o = new Program();
             persons.Add(new Person(idPerson, namePerson, gengerPerson, agePersone));
-
+            Console.WriteLine("Привет");
         }
 
         //static bool FoundElementPersonById(Person person)

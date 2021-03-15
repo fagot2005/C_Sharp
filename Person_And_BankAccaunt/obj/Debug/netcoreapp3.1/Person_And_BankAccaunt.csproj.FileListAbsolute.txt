@@ -11,3 +11,16 @@ E:\C_Sharp_Project\Person_And_BankAccaunt\obj\Debug\netcoreapp3.1\Person_And_Ban
 E:\C_Sharp_Project\Person_And_BankAccaunt\obj\Debug\netcoreapp3.1\Person_And_BankAccaunt.dll
 E:\C_Sharp_Project\Person_And_BankAccaunt\obj\Debug\netcoreapp3.1\Person_And_BankAccaunt.pdb
 E:\C_Sharp_Project\Person_And_BankAccaunt\obj\Debug\netcoreapp3.1\Person_And_BankAccaunt.genruntimeconfig.cache
+D:\OneDrive - Betinvest\С#_project\C_Sharp\Person_And_BankAccaunt\bin\Debug\netcoreapp3.1\Person_And_BankAccaunt.exe
+D:\OneDrive - Betinvest\С#_project\C_Sharp\Person_And_BankAccaunt\bin\Debug\netcoreapp3.1\Person_And_BankAccaunt.deps.json
+D:\OneDrive - Betinvest\С#_project\C_Sharp\Person_And_BankAccaunt\bin\Debug\netcoreapp3.1\Person_And_BankAccaunt.runtimeconfig.json
+D:\OneDrive - Betinvest\С#_project\C_Sharp\Person_And_BankAccaunt\bin\Debug\netcoreapp3.1\Person_And_BankAccaunt.runtimeconfig.dev.json
+D:\OneDrive - Betinvest\С#_project\C_Sharp\Person_And_BankAccaunt\bin\Debug\netcoreapp3.1\Person_And_BankAccaunt.dll
+D:\OneDrive - Betinvest\С#_project\C_Sharp\Person_And_BankAccaunt\bin\Debug\netcoreapp3.1\Person_And_BankAccaunt.pdb
+D:\OneDrive - Betinvest\С#_project\C_Sharp\Person_And_BankAccaunt\obj\Debug\netcoreapp3.1\Person_And_BankAccaunt.csprojAssemblyReference.cache
+D:\OneDrive - Betinvest\С#_project\C_Sharp\Person_And_BankAccaunt\obj\Debug\netcoreapp3.1\Person_And_BankAccaunt.AssemblyInfoInputs.cache
+D:\OneDrive - Betinvest\С#_project\C_Sharp\Person_And_BankAccaunt\obj\Debug\netcoreapp3.1\Person_And_BankAccaunt.AssemblyInfo.cs
+D:\OneDrive - Betinvest\С#_project\C_Sharp\Person_And_BankAccaunt\obj\Debug\netcoreapp3.1\Person_And_BankAccaunt.csproj.CoreCompileInputs.cache
+D:\OneDrive - Betinvest\С#_project\C_Sharp\Person_And_BankAccaunt\obj\Debug\netcoreapp3.1\Person_And_BankAccaunt.dll
+D:\OneDrive - Betinvest\С#_project\C_Sharp\Person_And_BankAccaunt\obj\Debug\netcoreapp3.1\Person_And_BankAccaunt.pdb
+D:\OneDrive - Betinvest\С#_project\C_Sharp\Person_And_BankAccaunt\obj\Debug\netcoreapp3.1\Person_And_BankAccaunt.genruntimeconfig.cache
