@@ -3,4 +3,6 @@
 ################################################################################
 
 /Test_String/obj
+/Person_And_BankAccaunt/bin/Debug/netcoreapp3.1
+/Person_And_BankAccaunt/obj/
 *.v2
