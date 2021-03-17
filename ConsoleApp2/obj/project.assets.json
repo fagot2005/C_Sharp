@@ -8,19 +8,19 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\v.lashchenko\\.nuget\\packages\\": {}
+    "C:\\Users\\1\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\OneDrive - Betinvest\\С#_project\\C_Sharp\\ConsoleApp2\\ConsoleApp2.csproj",
+      "projectUniqueName": "E:\\C_Sharp_Project\\ConsoleApp2\\ConsoleApp2.csproj",
       "projectName": "ConsoleApp2",
-      "projectPath": "D:\\OneDrive - Betinvest\\С#_project\\C_Sharp\\ConsoleApp2\\ConsoleApp2.csproj",
-      "packagesPath": "C:\\Users\\v.lashchenko\\.nuget\\packages\\",
-      "outputPath": "D:\\OneDrive - Betinvest\\С#_project\\C_Sharp\\ConsoleApp2\\obj\\",
+      "projectPath": "E:\\C_Sharp_Project\\ConsoleApp2\\ConsoleApp2.csproj",
+      "packagesPath": "C:\\Users\\1\\.nuget\\packages\\",
+      "outputPath": "E:\\C_Sharp_Project\\ConsoleApp2\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\v.lashchenko\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\1\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

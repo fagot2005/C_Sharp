@@ -6,7 +6,7 @@ namespace Person_And_BankAccount
     class Program
     {
         //List<Person> persons = new List<Person>();
-        List<BankAccount> bankAccounts = new List<BankAccount>();
+        //List<BankAccount> bankAccounts = new List<BankAccount>();
 
         static void Main(string[] args)
         {

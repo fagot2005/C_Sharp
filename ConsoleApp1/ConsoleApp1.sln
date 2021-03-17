@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp3", "..\ConsoleAp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Test_String", "..\Test_String\Test_String.csproj", "{3530E6D3-4AA9-4B76-89F5-13CDE55CB6DA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Person_And_BankAccaunt", "..\Person_And_BankAccaunt\Person_And_BankAccaunt.csproj", "{7F6169C1-2E3F-4AC0-99E3-105375001328}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Person_And_BankAccount", "..\Person_And_BankAccaunt\Person_And_BankAccount.csproj", "{7F6169C1-2E3F-4AC0-99E3-105375001328}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

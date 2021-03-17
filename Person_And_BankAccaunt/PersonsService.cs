@@ -1,9 +1,7 @@
-﻿using Person_And_BankAccount;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.Text;
 
-namespace Person_And_BankAccaunt
+namespace Person_And_BankAccount
 {
     class PersonsService
     {
