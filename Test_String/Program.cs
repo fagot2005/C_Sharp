@@ -7,8 +7,8 @@ namespace Test_String
 
         public class TestGendor
         {
-            private string Name;
-            private Gender Gender;
+            private string Name { get; set; }
+            private Gender Gender { get; set; }
 
             public TestGendor(string name, Gender gender)
             {
@@ -31,6 +31,7 @@ namespace Test_String
             Gender Gender = pr.CorectInputGender();
             TestGendor tg = new TestGendor(Name, Gender);
             Console.WriteLine("Добавлен {0}, пол - {1}", Name, Gender);
+            Console.ReadKey();
             //bool cont = true;
             //while (cont == true)
             //{
