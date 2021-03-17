@@ -8,9 +8,9 @@ namespace Person_And_BankAccount
     {
         public string Id { get; set; }
         public string Name { get; set; }
-        public string Gender { get; set; }
+        public Gender Gender { get; set; }
         public byte Age { get; set; }
-        public Person(string id, string name, string gender, byte age)
+        public Person(string id, string name, Gender gender, byte age)
         {
             this.Id = id;
             this.Name = name;
