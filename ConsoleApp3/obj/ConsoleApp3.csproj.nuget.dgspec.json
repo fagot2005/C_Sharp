@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\OneDrive - Betinvest\\С#_project\\C_Sharp\\ConsoleApp3\\ConsoleApp3.csproj": {}
+    "E:\\C_Sharp_Project\\ConsoleApp3\\ConsoleApp3.csproj": {}
   },
   "projects": {
-    "D:\\OneDrive - Betinvest\\С#_project\\C_Sharp\\ConsoleApp3\\ConsoleApp3.csproj": {
+    "E:\\C_Sharp_Project\\ConsoleApp3\\ConsoleApp3.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\OneDrive - Betinvest\\С#_project\\C_Sharp\\ConsoleApp3\\ConsoleApp3.csproj",
+        "projectUniqueName": "E:\\C_Sharp_Project\\ConsoleApp3\\ConsoleApp3.csproj",
         "projectName": "ConsoleApp3",
-        "projectPath": "D:\\OneDrive - Betinvest\\С#_project\\C_Sharp\\ConsoleApp3\\ConsoleApp3.csproj",
-        "packagesPath": "C:\\Users\\v.lashchenko\\.nuget\\packages\\",
-        "outputPath": "D:\\OneDrive - Betinvest\\С#_project\\C_Sharp\\ConsoleApp3\\obj\\",
+        "projectPath": "E:\\C_Sharp_Project\\ConsoleApp3\\ConsoleApp3.csproj",
+        "packagesPath": "C:\\Users\\1\\.nuget\\packages\\",
+        "outputPath": "E:\\C_Sharp_Project\\ConsoleApp3\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\v.lashchenko\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\1\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

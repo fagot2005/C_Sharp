@@ -1,86 +1,133 @@
 ﻿using System;
 using System.Collections.Generic;
 
-
-namespace Person_And_BankAccaunt
+namespace Person_And_BankAccount
 {
     class Program
     {
         List<Person> persons = new List<Person>();
-        List<BankAccaunt> bankAccaunts = new List<BankAccaunt>();
-
+        List<BankAccount> bankAccounts = new List<BankAccount>();
 
         static void Main(string[] args)
         {
             Program program = new Program();
-            
-            //MenyStepOne();
-            program.AddNewPerson();
-            //persons.Add(new Person("123", "Vasil", "man", 46));
-            //bankAccaunts.Add(new BankAccaunt("2600", persons.Find(x => String.Equals(x.id, "123")), "USD", 1500));
-
-            //FoundElementPersonById(per)
-            //Person person1 = new Person);
-            //BankAccaunt acc1 = new BankAccaunt("2600", person1, "usd", 1000);
-            //BankAccaunt acc2 = new BankAccaunt("2620", person1, "eur", 3500);
-
-            //Console.WriteLine($"{person1.Name}  {person1.Age}");
+            program.MenuStepOne();
             Console.ReadKey();
         }
 
-       public void AddNewPerson()
+        public void AddNewPerson()
         {
             string idPerson, namePerson, gengerPerson;
             byte agePersone;
             Console.WriteLine("Enter ID new Person");
             idPerson = Console.ReadLine();
+            Console.WriteLine("Enter Name new Person");
             namePerson = Console.ReadLine();
+            Console.WriteLine("Enter gender new Person");
             gengerPerson = Console.ReadLine();
+            Console.WriteLine("Enter age new Person");
             agePersone = byte.Parse(Console.ReadLine());
-            //Program o = new Program();
-            persons.Add(new Person(idPerson, namePerson, gengerPerson, agePersone));
-            Console.WriteLine("Привет");
+            if (FoundElementPersonById(idPerson))
+            {
+                persons.Add(new Person(idPerson, namePerson, gengerPerson, agePersone));
+                Console.WriteLine("New Person with ID {0}, Name {1}, gender {2} and age {3} add sussesfull", idPerson, namePerson, gengerPerson, agePersone);
+                Console.WriteLine("Для продолжения нажмите любую клавишу");
+                Console.ReadKey();
+            }
+            MenuStepTwoPerson();
         }
 
-        //static bool FoundElementPersonById(Person person)
-        //{
-        //    bool resaltOfFoundElement = true;
-        //    foreach (var o in persons)
-        //    {
-        //        if (String.Equals(o.id, person.id))
-        //            resaltOfFoundElement = false;
-        //        break;
-        //    }
-        //    return resaltOfFoundElement;
-
-        //}
-
-        static void MenyStepOne()
+        public bool FoundElementPersonById(string id)
         {
+            bool resaltOfFoundElement = true;
+            foreach (Person element in persons)
+            {
+                if (String.Equals(element.Id, id))
+                {
+                    resaltOfFoundElement = false;
+                    Console.WriteLine("Person with ID {0}, Name {1}, gender {2} and age {3} already in the system", element.Id, element.Name, element.gender, element.Age);
+                    Console.WriteLine("Для продолжения нажмите любую клавишу");
+                    Console.ReadKey();
+                    MenuStepTwoPerson();
+                    break;
+                }
+            }
+            return resaltOfFoundElement;
+        }
+
+        public bool FoundElementPersonByName(string name)
+        {
+            bool resaltOfFoundElement = true;
+            foreach (Person element in persons)
+            {
+                if (String.Equals(element.Name, name))
+                    resaltOfFoundElement = false;
+                Console.WriteLine("Person with ID {0}, Name {1}, gender {2} and age {3} already in the system", element.Id, element.Name, element.gender, element.Age);
+                Console.WriteLine("Для продолжения нажмите любую клавишу");
+                Console.ReadKey();
+                MenuStepTwoPerson();
+                break;
+            }
+            return resaltOfFoundElement;
+        }
+
+        public void MenuStepOne()
+        {
+            Console.Clear();
             Console.WriteLine("Выберите пункт меню для работы с нужным объектом:");
             Console.WriteLine("1- Работа с клиентами, 2- Работа со счетами клиентов");
-            string firstStepMeny = Console.ReadLine();
-            if (String.Equals(firstStepMeny, "1"))
-                MenyStepTwoPerson();
-            else MenyStepTwoBankAccaunt();
+            string firstStepMenu = Console.ReadLine();
+            switch (firstStepMenu)
+            {
+                case "1":
+                    MenuStepTwoPerson();
+                    break;
+                case "2":
+                    MenuStepTwoBankAccount();
+                    break;
+                default:
+                    Console.WriteLine("Следует выбрать вариат 1 или вариант 2");
+                    break;
+            }
         }
 
-        private static void MenyStepTwoBankAccaunt()
+        public void MenuStepTwoPerson()
         {
             Console.Clear();
             Console.WriteLine("Выберите пункт меню для работы с клиентами:");
-            Console.WriteLine("1- Добалвние нового клиента, 2- Поиск клиента по ID, 3- Поиск клиента по имени, 4- Возврат в предыдущее меню");
-            string twoStepMenyPerson = Console.ReadLine();
-            //if (String.Equals(twoStepMenyPerson, "1"))
+            Console.WriteLine("1- Добавление нового клиента, 2- Поиск клиента по ID, 3- Поиск клиента по имени, 4- Возврат в предыдущее меню");
+            string twoStepMenuPerson = Console.ReadLine();
+            switch (twoStepMenuPerson)
+            {
+                case "1":
+                    AddNewPerson();
+                    break;
+                case "2":
+                    Console.WriteLine("Введите ID клиента");
+                    string personID = Console.ReadLine();
+                    FoundElementPersonById(personID);
+                    break;
+                case "3":
+                    Console.WriteLine("Введите имя клиента");
+                    string personName = Console.ReadLine();
+                    FoundElementPersonByName(personName);
+                    break;
+                case "4":
+                    MenuStepOne();
+                    break;
+                default:
+                    Console.WriteLine("Следует выбрать вариат 1, 2, 3 или 4");
+                    break;
+            }
         }
 
-        private static void MenyStepTwoPerson()
+        public void MenuStepTwoBankAccount()
         {
             Console.Clear();
             Console.WriteLine("Выберите пункт меню для работы с банковскими счетами клиентов:");
-            Console.WriteLine("1- Добавление нового счета клиента, 2- Поиск счета по имени, 3- Поиск счета по ID, 4- Увеличение остатка по счету, 5- Уменьшение остскаРабота со счетами клиентов");
-            string firstStepMeny = Console.ReadLine();
-            //if (String.Equals(firstStepMeny, "1"))
+            Console.WriteLine("1- Добавление нового счета клиента, 2- Поиск счета по имени, 3- Поиск счета по ID, 4- Увеличение остатка по счету, 5- Уменьшение остатка по счетускаРабота со счетами клиентов");
+            string firstStepMenu = Console.ReadLine();
+            //if (String.Equals(firstStepMenu, "1"))
         }
     }
 }

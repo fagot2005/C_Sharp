@@ -2,21 +2,26 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Person_And_BankAccaunt
+namespace Person_And_BankAccount
 {
     public class Person
     {
+        public string Id { get; set; }
+        public string Name { get; set; }
+        public string Gender { get; set; }
+        public byte Age { get; set; }
         public Person(string id, string name, string gender, byte age)
         {
-            this.id = id;
-            this.name = name;
-            this.gender = gender;
-            this.age = age;
+            this.Id = id;
+            this.Name = name;
+            this.Gender = gender;
+            this.Age = age;
         }
+    }
 
-        public string id { get; set; }
-        public string name { get; set; }
-        public string gender { get; set; }
-        public byte age { get; set; } 
+    public enum Gender
+    {
+        Male = 0,
+        Female = 1
     }
 }

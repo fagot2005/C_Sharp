@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\OneDrive - Betinvest\\С#_project\\C_Sharp\\Person_And_BankAccaunt\\Person_And_BankAccaunt.csproj": {}
+    "E:\\C_Sharp_Project\\Person_And_BankAccaunt\\Person_And_BankAccaunt.csproj": {}
   },
   "projects": {
-    "D:\\OneDrive - Betinvest\\С#_project\\C_Sharp\\Person_And_BankAccaunt\\Person_And_BankAccaunt.csproj": {
+    "E:\\C_Sharp_Project\\Person_And_BankAccaunt\\Person_And_BankAccaunt.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\OneDrive - Betinvest\\С#_project\\C_Sharp\\Person_And_BankAccaunt\\Person_And_BankAccaunt.csproj",
+        "projectUniqueName": "E:\\C_Sharp_Project\\Person_And_BankAccaunt\\Person_And_BankAccaunt.csproj",
         "projectName": "Person_And_BankAccaunt",
-        "projectPath": "D:\\OneDrive - Betinvest\\С#_project\\C_Sharp\\Person_And_BankAccaunt\\Person_And_BankAccaunt.csproj",
-        "packagesPath": "C:\\Users\\v.lashchenko\\.nuget\\packages\\",
-        "outputPath": "D:\\OneDrive - Betinvest\\С#_project\\C_Sharp\\Person_And_BankAccaunt\\obj\\",
+        "projectPath": "E:\\C_Sharp_Project\\Person_And_BankAccaunt\\Person_And_BankAccaunt.csproj",
+        "packagesPath": "C:\\Users\\1\\.nuget\\packages\\",
+        "outputPath": "E:\\C_Sharp_Project\\Person_And_BankAccaunt\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\v.lashchenko\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\1\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
