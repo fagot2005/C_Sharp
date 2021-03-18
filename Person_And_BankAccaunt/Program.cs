@@ -106,16 +106,19 @@ namespace Person_And_BankAccount
             {
                 case "1":
                     ps.AddNewPerson();
+                    MenuStepTwoPerson(ps);
                     break;
                 case "2":
                     Console.WriteLine("Введите ID клиента");
                     string personID = Console.ReadLine();
                     ps.FoundElementPersonById(personID);
+                    MenuStepTwoPerson(ps);
                     break;
                 case "3":
                     Console.WriteLine("Введите имя клиента");
                     string personName = Console.ReadLine();
-                    FoundElementPersonByName(personName);
+                    ps.FoundElementPersonByName(personName);
+                    MenuStepTwoPerson(ps);
                     break;
                 case "4":
                     MenuStepOne(ps);

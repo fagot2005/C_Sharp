@@ -31,7 +31,7 @@ namespace Person_And_BankAccount
                 Console.WriteLine("Для продолжения нажмите любую клавишу");
                 Console.ReadKey();
             }
-            pr.MenuStepTwoPerson();
+            //MenuStepTwoPerson();
         }
 
         public bool FoundElementPersonById(string id)
@@ -45,7 +45,7 @@ namespace Person_And_BankAccount
                     Console.WriteLine("Person with ID {0}, Name {1}, gender {2} and age {3} already in the system", element.Id, element.Name, element.Gender, element.Age);
                     Console.WriteLine("Для продолжения нажмите любую клавишу");
                     Console.ReadKey();
-                    menu.MenuStepTwoPerson();
+                    //MenuStepTwoPerson();
                     break;
                 }
             }
@@ -62,7 +62,7 @@ namespace Person_And_BankAccount
                 Console.WriteLine("Person with ID {0}, Name {1}, gender {2} and age {3} already in the system", element.Id, element.Name, element.Gender, element.Age);
                 Console.WriteLine("Для продолжения нажмите любую клавишу");
                 Console.ReadKey();
-                pr.MenuStepTwoPerson();
+                //MenuStepTwoPerson();
                 break;
             }
             return resaltOfFoundElement;
