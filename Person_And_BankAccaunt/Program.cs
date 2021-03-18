@@ -6,12 +6,15 @@ namespace Person_And_BankAccount
     class Program
     {
         //List<Person> persons = new List<Person>();
-        //List<BankAccount> bankAccounts = new List<BankAccount>();
+        List<BankAccount> bankAccounts = new List<BankAccount>();
+        
 
         static void Main(string[] args)
         {
-            Menu menu = new Menu();
-            menu.MenuStepOne();
+            //Menu menu = new Menu();
+            //Program pr = new Program();
+            PersonsService ps = new PersonsService();
+            MenuStepOne();
             Console.ReadKey();
         }
 
@@ -73,57 +76,57 @@ namespace Person_And_BankAccount
         //    return resaltOfFoundElement;
         //}
 
-        //public void MenuStepOne()
-        //{
-        //    Console.Clear();
-        //    Console.WriteLine("Выберите пункт меню для работы с нужным объектом:");
-        //    Console.WriteLine("1- Работа с клиентами, 2- Работа со счетами клиентов");
-        //    string firstStepMenu = Console.ReadLine();
-        //    switch (firstStepMenu)
-        //    {
-        //        case "1":
-        //            MenuStepTwoPerson();
-        //            break;
-        //        case "2":
-        //            MenuStepTwoBankAccount();
-        //            break;
-        //        default:
-        //            Console.WriteLine("Следует выбрать вариат 1 или вариант 2");
-        //            break;
-        //    }
-        //}
+        static void MenuStepOne()
+        {
+            Console.Clear();
+            Console.WriteLine("Выберите пункт меню для работы с нужным объектом:");
+            Console.WriteLine("1- Работа с клиентами, 2- Работа со счетами клиентов");
+            string firstStepMenu = Console.ReadLine();
+            switch (firstStepMenu)
+            {
+                case "1":
+                    MenuStepTwoPerson();
+                    break;
+                case "2":
+                    MenuStepTwoBankAccount();
+                    break;
+                default:
+                    Console.WriteLine("Следует выбрать вариат 1 или вариант 2");
+                    break;
+            }
+        }
 
-        //public void MenuStepTwoPerson()
-        //{
-        //    Console.Clear();
-        //    Console.WriteLine("Выберите пункт меню для работы с клиентами:");
-        //    Console.WriteLine("1- Добавление нового клиента, 2- Поиск клиента по ID, 3- Поиск клиента по имени, 4- Возврат в предыдущее меню");
-        //    string twoStepMenuPerson = Console.ReadLine();
-        //    switch (twoStepMenuPerson)
-        //    {
-        //        case "1":
-        //            AddNewPerson();
-        //            break;
-        //        case "2":
-        //            Console.WriteLine("Введите ID клиента");
-        //            string personID = Console.ReadLine();
-        //            FoundElementPersonById(personID);
-        //            break;
-        //        case "3":
-        //            Console.WriteLine("Введите имя клиента");
-        //            string personName = Console.ReadLine();
-        //            FoundElementPersonByName(personName);
-        //            break;
-        //        case "4":
-        //            MenuStepOne();
-        //            break;
-        //        default:
-        //            Console.WriteLine("Следует выбрать вариат 1, 2, 3 или 4");
-        //            break;
-        //    }
-        //}
+        static void MenuStepTwoPerson()
+        {
+            Console.Clear();
+            Console.WriteLine("Выберите пункт меню для работы с клиентами:");
+            Console.WriteLine("1- Добавление нового клиента, 2- Поиск клиента по ID, 3- Поиск клиента по имени, 4- Возврат в предыдущее меню");
+            string twoStepMenuPerson = Console.ReadLine();
+            switch (twoStepMenuPerson)
+            {
+                case "1":
+                    ps.AddNewPerson();
+                    break;
+                case "2":
+                    Console.WriteLine("Введите ID клиента");
+                    string personID = Console.ReadLine();
+                    ps.FoundElementPersonById(personID);
+                    break;
+                case "3":
+                    Console.WriteLine("Введите имя клиента");
+                    string personName = Console.ReadLine();
+                    FoundElementPersonByName(personName);
+                    break;
+                case "4":
+                    MenuStepOne();
+                    break;
+                default:
+                    Console.WriteLine("Следует выбрать вариат 1, 2, 3 или 4");
+                    break;
+            }
+        }
 
-        public void MenuStepTwoBankAccount()
+        public static void MenuStepTwoBankAccount()
         {
             Console.Clear();
             Console.WriteLine("Выберите пункт меню для работы с банковскими счетами клиентов:");

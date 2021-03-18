@@ -5,9 +5,11 @@ namespace Person_And_BankAccount
 {
     class PersonsService
     {
+        //Program pr = new Program();
+        //PersonsService ps = new PersonsService();
         List<Person> persons = new List<Person>();
-        Menu menu = new Menu();
-
+        //Menu menu = new Menu();
+        
         public void AddNewPerson()
         {
             string idPerson, namePerson;
@@ -29,7 +31,7 @@ namespace Person_And_BankAccount
                 Console.WriteLine("Для продолжения нажмите любую клавишу");
                 Console.ReadKey();
             }
-            menu.MenuStepTwoPerson();
+            pr.MenuStepTwoPerson();
         }
 
         public bool FoundElementPersonById(string id)
@@ -60,7 +62,7 @@ namespace Person_And_BankAccount
                 Console.WriteLine("Person with ID {0}, Name {1}, gender {2} and age {3} already in the system", element.Id, element.Name, element.Gender, element.Age);
                 Console.WriteLine("Для продолжения нажмите любую клавишу");
                 Console.ReadKey();
-                menu.MenuStepTwoPerson();
+                pr.MenuStepTwoPerson();
                 break;
             }
             return resaltOfFoundElement;

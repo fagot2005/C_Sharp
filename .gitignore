@@ -7,3 +7,5 @@
 /Person_And_BankAccaunt/obj/*
 *.v2
 *.suo
+/Class_Test/obj/Debug/netcoreapp3.1
+/Class_Test/obj
