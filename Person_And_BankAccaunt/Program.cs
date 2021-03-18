@@ -14,7 +14,7 @@ namespace Person_And_BankAccount
             //Menu menu = new Menu();
             //Program pr = new Program();
             PersonsService ps = new PersonsService();
-            MenuStepOne();
+            MenuStepOne(ps);
             Console.ReadKey();
         }
 
@@ -76,7 +76,7 @@ namespace Person_And_BankAccount
         //    return resaltOfFoundElement;
         //}
 
-        static void MenuStepOne()
+        static void MenuStepOne(PersonsService ps)
         {
             Console.Clear();
             Console.WriteLine("Выберите пункт меню для работы с нужным объектом:");
@@ -85,10 +85,10 @@ namespace Person_And_BankAccount
             switch (firstStepMenu)
             {
                 case "1":
-                    MenuStepTwoPerson();
+                    MenuStepTwoPerson(ps);
                     break;
                 case "2":
-                    MenuStepTwoBankAccount();
+                    MenuStepTwoBankAccount(ps);
                     break;
                 default:
                     Console.WriteLine("Следует выбрать вариат 1 или вариант 2");
@@ -96,7 +96,7 @@ namespace Person_And_BankAccount
             }
         }
 
-        static void MenuStepTwoPerson()
+        static void MenuStepTwoPerson(PersonsService ps)
         {
             Console.Clear();
             Console.WriteLine("Выберите пункт меню для работы с клиентами:");
@@ -118,7 +118,7 @@ namespace Person_And_BankAccount
                     FoundElementPersonByName(personName);
                     break;
                 case "4":
-                    MenuStepOne();
+                    MenuStepOne(ps);
                     break;
                 default:
                     Console.WriteLine("Следует выбрать вариат 1, 2, 3 или 4");
@@ -126,7 +126,7 @@ namespace Person_And_BankAccount
             }
         }
 
-        public static void MenuStepTwoBankAccount()
+        public static void MenuStepTwoBankAccount(PersonsService ps)
         {
             Console.Clear();
             Console.WriteLine("Выберите пункт меню для работы с банковскими счетами клиентов:");
