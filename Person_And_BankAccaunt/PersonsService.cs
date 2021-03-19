@@ -5,11 +5,8 @@ namespace Person_And_BankAccount
 {
     class PersonsService
     {
-        //Program pr = new Program();
-        //PersonsService ps = new PersonsService();
         List<Person> persons = new List<Person>();
-        //Menu menu = new Menu();
-        
+
         public void AddNewPerson()
         {
             string idPerson, namePerson;
@@ -19,9 +16,7 @@ namespace Person_And_BankAccount
             idPerson = Console.ReadLine();
             Console.WriteLine("Enter Name new Person");
             namePerson = Console.ReadLine();
-            //Console.WriteLine("Enter gender new Person");
             gengerPerson = CorectInputGender();
-            //gengerPerson = Console.ReadLine();
             Console.WriteLine("Enter age new Person");
             agePersone = byte.Parse(Console.ReadLine());
             if (FoundElementPersonById(idPerson))
@@ -31,7 +26,6 @@ namespace Person_And_BankAccount
                 Console.WriteLine("Для продолжения нажмите любую клавишу");
                 Console.ReadKey();
             }
-            //MenuStepTwoPerson();
         }
 
         public bool FoundElementPersonById(string id)
@@ -45,7 +39,6 @@ namespace Person_And_BankAccount
                     Console.WriteLine("Person with ID {0}, Name {1}, gender {2} and age {3} already in the system", element.Id, element.Name, element.Gender, element.Age);
                     Console.WriteLine("Для продолжения нажмите любую клавишу");
                     Console.ReadKey();
-                    //MenuStepTwoPerson();
                     break;
                 }
             }
@@ -62,7 +55,6 @@ namespace Person_And_BankAccount
                 Console.WriteLine("Person with ID {0}, Name {1}, gender {2} and age {3} already in the system", element.Id, element.Name, element.Gender, element.Age);
                 Console.WriteLine("Для продолжения нажмите любую клавишу");
                 Console.ReadKey();
-                //MenuStepTwoPerson();
                 break;
             }
             return resaltOfFoundElement;
@@ -74,14 +66,12 @@ namespace Person_And_BankAccount
             bool corectInput = true;
             while (corectInput)
             {
-                //Console.Clear();
                 Console.WriteLine("Enter gender new Person, 0-Male, 1-Fimale");
                 string digitGender = Console.ReadLine();
                 if (String.Equals(digitGender, "0") | (String.Equals(digitGender, "1")))
                 {
                     genderPerson = (Gender)int.Parse(digitGender);
                     corectInput = false;
-                    //Console.WriteLine(genderPerson);
                 }
                 else
                 {

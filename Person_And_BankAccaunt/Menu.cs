@@ -1,13 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
 
 namespace Person_And_BankAccount
 {
     class Menu
     {
-        PersonsService ps = new PersonsService();
 
-        static void MenuStepOne()
+        public void MenuStepOne(PersonsService ps, BankAccountService bac)
         {
             Console.Clear();
             Console.WriteLine("Выберите пункт меню для работы с нужным объектом:");
@@ -16,10 +14,10 @@ namespace Person_And_BankAccount
             switch (firstStepMenu)
             {
                 case "1":
-                    MenuStepTwoPerson();
+                    MenuStepTwoPerson(ps, bac);
                     break;
                 case "2":
-                    MenuStepTwoBankAccount();
+                    MenuStepTwoBankAccount(ps, bac);
                     break;
                 default:
                     Console.WriteLine("Следует выбрать вариат 1 или вариант 2");
@@ -27,7 +25,7 @@ namespace Person_And_BankAccount
             }
         }
 
-        static void MenuStepTwoPerson()
+        public void MenuStepTwoPerson(PersonsService ps, BankAccountService bac)
         {
             Console.Clear();
             Console.WriteLine("Выберите пункт меню для работы с клиентами:");
@@ -37,26 +35,29 @@ namespace Person_And_BankAccount
             {
                 case "1":
                     ps.AddNewPerson();
+                    MenuStepTwoPerson(ps, bac);
                     break;
                 case "2":
                     Console.WriteLine("Введите ID клиента");
                     string personID = Console.ReadLine();
                     ps.FoundElementPersonById(personID);
+                    MenuStepTwoPerson(ps, bac);
                     break;
                 case "3":
                     Console.WriteLine("Введите имя клиента");
                     string personName = Console.ReadLine();
                     ps.FoundElementPersonByName(personName);
+                    MenuStepTwoPerson(ps, bac);
                     break;
                 case "4":
-                    MenuStepOne();
+                    MenuStepOne(ps, bac);
                     break;
                 default:
                     Console.WriteLine("Следует выбрать вариат 1, 2, 3 или 4");
                     break;
             }
         }
-        static void MenuStepTwoBankAccount()
+        public void MenuStepTwoBankAccount(PersonsService ps, BankAccountService bac)
         {
             Console.Clear();
             Console.WriteLine("Выберите пункт меню для работы с банковскими счетами клиентов:");
