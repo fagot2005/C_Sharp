@@ -18,5 +18,12 @@ namespace Person_And_BankAccount
             this.Carency = carency;
             this.Balans = balans;
         }
+
+        //public enum Carency
+        //{
+        //    USD = 840,
+        //    EUR = 978,
+        //    UAH = 980
+        //}
     }
 }

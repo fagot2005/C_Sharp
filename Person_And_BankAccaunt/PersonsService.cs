@@ -19,25 +19,25 @@ namespace Person_And_BankAccount
             gengerPerson = CorectInputGender();
             Console.WriteLine("Enter age new Person");
             agePersone = byte.Parse(Console.ReadLine());
-            if (FoundElementPersonById(idPerson))
+            if (FindPersonById(idPerson) == null)
             {
                 persons.Add(new Person(idPerson, namePerson, gengerPerson, agePersone));
                 Console.WriteLine("New Person with ID {0}, Name {1}, gender {2} and age {3} add sussesfull", idPerson, namePerson, gengerPerson, agePersone);
-                Console.WriteLine("Для продолжения нажмите любую клавишу");
+                Console.WriteLine("Please, press any key to continue.");
                 Console.ReadKey();
             }
         }
 
-        public bool FoundElementPersonById(string id)
+        public Person FindPersonById(string id)
         {
-            bool resaltOfFoundElement = true;
+            Person resaltOfFoundElement = null;
             foreach (Person element in persons)
             {
                 if (String.Equals(element.Id, id))
                 {
-                    resaltOfFoundElement = false;
+                    resaltOfFoundElement = element;
                     Console.WriteLine("Person with ID {0}, Name {1}, gender {2} and age {3} already in the system", element.Id, element.Name, element.Gender, element.Age);
-                    Console.WriteLine("Для продолжения нажмите любую клавишу");
+                    Console.WriteLine("Please, press any key to continue.");
                     Console.ReadKey();
                     break;
                 }
@@ -45,7 +45,18 @@ namespace Person_And_BankAccount
             return resaltOfFoundElement;
         }
 
-        public bool FoundElementPersonByName(string name)
+        public void FindAllPersons()
+        {
+            Console.Clear();
+            foreach (Person element in persons)
+            {
+                Console.WriteLine("Person with ID {0}, Name {1}, gender {2} and age {3}", element.Id, element.Name, element.Gender, element.Age);
+            }
+            Console.WriteLine("Please, press any key to continue.");
+            Console.ReadKey();
+        }
+
+        public bool FindPersonByName(string name)
         {
             bool resaltOfFoundElement = true;
             foreach (Person element in persons)
@@ -53,7 +64,7 @@ namespace Person_And_BankAccount
                 if (String.Equals(element.Name, name))
                     resaltOfFoundElement = false;
                 Console.WriteLine("Person with ID {0}, Name {1}, gender {2} and age {3} already in the system", element.Id, element.Name, element.Gender, element.Age);
-                Console.WriteLine("Для продолжения нажмите любую клавишу");
+                Console.WriteLine("Please, press any key to continue.");
                 Console.ReadKey();
                 break;
             }
@@ -80,6 +91,14 @@ namespace Person_And_BankAccount
                 }
             }
             return genderPerson;
+        }
+
+        public void AddAllPersons()
+        {
+            persons.Add(new Person("123", "Ivan", Gender.Male, 34));
+            persons.Add(new Person("222", "Penro", Gender.Male, 25));
+            persons.Add(new Person("333", "Anna", Gender.Female, 28));
+            persons.Add(new Person("444", "Stepan", Gender.Male, 45));
         }
     }
 }

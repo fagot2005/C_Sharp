@@ -4,20 +4,22 @@ namespace Person_And_BankAccount
 {
     class Menu
     {
+        private PersonsService PersonServiceMenu { get; set; } = new PersonsService();
+        private BankAccountService BankAccountServiceMenu { get; set; } = new BankAccountService();
 
-        public void MenuStepOne(PersonsService ps, BankAccountService bac)
+        public void MenuStepOne()
         {
             Console.Clear();
-            Console.WriteLine("Выберите пункт меню для работы с нужным объектом:");
-            Console.WriteLine("1- Работа с клиентами, 2- Работа со счетами клиентов");
+            Console.WriteLine("Select a menu item to work with the desired object:");
+            Console.WriteLine("1- Work with clients, 2- Work with bankaccound");
             string firstStepMenu = Console.ReadLine();
             switch (firstStepMenu)
             {
                 case "1":
-                    MenuStepTwoPerson(ps, bac);
+                    MenuStepTwoPerson();
                     break;
                 case "2":
-                    MenuStepTwoBankAccount(ps, bac);
+                    MenuStepTwoBankAccount();
                     break;
                 default:
                     Console.WriteLine("Следует выбрать вариат 1 или вариант 2");
@@ -25,45 +27,91 @@ namespace Person_And_BankAccount
             }
         }
 
-        public void MenuStepTwoPerson(PersonsService ps, BankAccountService bac)
+        public void MenuStepTwoPerson()
         {
             Console.Clear();
-            Console.WriteLine("Выберите пункт меню для работы с клиентами:");
-            Console.WriteLine("1- Добавление нового клиента, 2- Поиск клиента по ID, 3- Поиск клиента по имени, 4- Возврат в предыдущее меню");
+            Console.WriteLine("Select the menu item for working with clients:");
+            Console.WriteLine("1 - Add new client");
+            Console.WriteLine("2 - Find client by ID");
+            Console.WriteLine("3 - Find client by name");
+            Console.WriteLine("4 - Output all of clients");
+            Console.WriteLine("5 - Return to previous menu");
             string twoStepMenuPerson = Console.ReadLine();
             switch (twoStepMenuPerson)
             {
                 case "1":
-                    ps.AddNewPerson();
-                    MenuStepTwoPerson(ps, bac);
+                    PersonServiceMenu.AddNewPerson();
+                    MenuStepTwoPerson();
                     break;
                 case "2":
-                    Console.WriteLine("Введите ID клиента");
+                    Console.WriteLine("Enter ID client");
                     string personID = Console.ReadLine();
-                    ps.FoundElementPersonById(personID);
-                    MenuStepTwoPerson(ps, bac);
+                    PersonServiceMenu.FindPersonById(personID);
+                    MenuStepTwoPerson();
                     break;
                 case "3":
-                    Console.WriteLine("Введите имя клиента");
+                    Console.WriteLine("Enter name of client");
                     string personName = Console.ReadLine();
-                    ps.FoundElementPersonByName(personName);
-                    MenuStepTwoPerson(ps, bac);
+                    PersonServiceMenu.FindPersonByName(personName);
+                    MenuStepTwoPerson();
                     break;
                 case "4":
-                    MenuStepOne(ps, bac);
+                    PersonServiceMenu.FindAllPersons();
+                    MenuStepTwoPerson();
+                    break;
+                case "5":
+                    MenuStepOne();
                     break;
                 default:
-                    Console.WriteLine("Следует выбрать вариат 1, 2, 3 или 4");
+                    Console.WriteLine("You should choose an option 1, 2, 3 or 4");
                     break;
             }
         }
-        public void MenuStepTwoBankAccount(PersonsService ps, BankAccountService bac)
+        public void MenuStepTwoBankAccount()
         {
             Console.Clear();
             Console.WriteLine("Выберите пункт меню для работы с банковскими счетами клиентов:");
-            Console.WriteLine("1- Добавление нового счета клиента, 2- Поиск счета по имени, 3- Поиск счета по ID, 4- Увеличение остатка по счету, 5- Уменьшение остатка по счетускаРабота со счетами клиентов");
-            string firstStepMenu = Console.ReadLine();
-            //if (String.Equals(firstStepMenu, "1"))
+            Console.WriteLine("1 - Добавление нового счета клиента");
+            Console.WriteLine("2 - Увеличение остатка по счету");
+            Console.WriteLine("3 - Вывести все счета всех клиентов");
+            Console.WriteLine("4 - Вернуться в предыдущее меню");
+            string twoStepMetuBankAccount = Console.ReadLine();
+            switch (twoStepMetuBankAccount)
+            {
+                case "1":
+                    Console.WriteLine("Enter ID client");
+                    string personID = Console.ReadLine();
+                    BankAccountServiceMenu.AddNewBankAccount(PersonServiceMenu.FindPersonById(personID));
+                    MenuStepTwoBankAccount();
+                    break;
+                case "2":
+                    Console.WriteLine("Enter ID bank account");
+                    string bankAccountID = Console.ReadLine();
+                    Console.WriteLine("Enter balance top-up amount");
+                    double topUpAmount = double.Parse(Console.ReadLine());
+                    BankAccountServiceMenu.TopUpAmount(bankAccountID, topUpAmount);
+                    MenuStepTwoBankAccount();
+                    break;
+                case "3":
+                    BankAccountServiceMenu.OutputAllPersonsAndAllBankAccounts();
+                    MenuStepTwoBankAccount();
+                    break;
+                case "4":
+                    MenuStepOne();
+                    break;
+                default:
+                    Console.WriteLine("You should choose an option 1, 2, 3 or 4");
+                    break;
+            }
+        }
+
+        public void AddElement()
+        {
+            PersonServiceMenu.AddAllPersons();
+            BankAccountServiceMenu.AddAllBankAccountc(PersonServiceMenu.FindPersonById("123"));
+            BankAccountServiceMenu.AddAllBankAccountc(PersonServiceMenu.FindPersonById("222"));
+            BankAccountServiceMenu.AddAllBankAccountc(PersonServiceMenu.FindPersonById("333"));
+            BankAccountServiceMenu.AddAllBankAccountc(PersonServiceMenu.FindPersonById("444"));
         }
     }
 }
