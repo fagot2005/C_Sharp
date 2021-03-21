@@ -11,7 +11,9 @@ namespace Person_And_BankAccount
         {
             Console.Clear();
             Console.WriteLine("Select a menu item to work with the desired object:");
-            Console.WriteLine("1- Work with clients, 2- Work with bankaccound");
+            Console.WriteLine("1 - Work with clients");
+            Console.WriteLine("2 - Work with bankaccound");
+            Console.WriteLine("Any other key - Exit");
             string firstStepMenu = Console.ReadLine();
             switch (firstStepMenu)
             {
@@ -22,7 +24,6 @@ namespace Person_And_BankAccount
                     MenuStepTwoBankAccount();
                     break;
                 default:
-                    Console.WriteLine("Следует выбрать вариат 1 или вариант 2");
                     break;
             }
         }

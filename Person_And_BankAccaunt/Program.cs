@@ -8,7 +8,7 @@ namespace Person_And_BankAccount
         static void Main(string[] args)
         {
             Menu menu = new Menu();
-            menu.AddElement();
+            //menu.AddElement();
             menu.MenuStepOne();
             Console.ReadKey();
         }
