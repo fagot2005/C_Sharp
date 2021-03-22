@@ -8,19 +8,19 @@ namespace Person_And_BankAccount
     {
         public string Id { get; set; }
         public Person Person { get; set; }
-        public Carency Carency { get; set; }
+        public Currency Currency { get; set; }
         public double Balans { get; set; }
 
-        public BankAccount(string id, Person persons, Carency carency, double balans)
+        public BankAccount(string id, Person persons, Currency currency, double balans)
         {
             this.Id = id;
             this.Person = persons;
-            this.Carency = carency;
+            this.Currency = currency;
             this.Balans = balans;
         }
     }
     
-    public enum Carency
+    public enum Currency
         {
             USD = 840,
             EUR = 978,
