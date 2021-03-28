@@ -1,0 +1,13 @@
+E:\C_Sharp_Project\Lesson2\Inheritance\Vehicle\bin\Debug\netcoreapp3.1\Vehicle.exe
+E:\C_Sharp_Project\Lesson2\Inheritance\Vehicle\bin\Debug\netcoreapp3.1\Vehicle.deps.json
+E:\C_Sharp_Project\Lesson2\Inheritance\Vehicle\bin\Debug\netcoreapp3.1\Vehicle.runtimeconfig.json
+E:\C_Sharp_Project\Lesson2\Inheritance\Vehicle\bin\Debug\netcoreapp3.1\Vehicle.runtimeconfig.dev.json
+E:\C_Sharp_Project\Lesson2\Inheritance\Vehicle\bin\Debug\netcoreapp3.1\Vehicle.dll
+E:\C_Sharp_Project\Lesson2\Inheritance\Vehicle\bin\Debug\netcoreapp3.1\Vehicle.pdb
+E:\C_Sharp_Project\Lesson2\Inheritance\Vehicle\obj\Debug\netcoreapp3.1\Vehicle.csprojAssemblyReference.cache
+E:\C_Sharp_Project\Lesson2\Inheritance\Vehicle\obj\Debug\netcoreapp3.1\Vehicle.AssemblyInfoInputs.cache
+E:\C_Sharp_Project\Lesson2\Inheritance\Vehicle\obj\Debug\netcoreapp3.1\Vehicle.AssemblyInfo.cs
+E:\C_Sharp_Project\Lesson2\Inheritance\Vehicle\obj\Debug\netcoreapp3.1\Vehicle.csproj.CoreCompileInputs.cache
+E:\C_Sharp_Project\Lesson2\Inheritance\Vehicle\obj\Debug\netcoreapp3.1\Vehicle.dll
+E:\C_Sharp_Project\Lesson2\Inheritance\Vehicle\obj\Debug\netcoreapp3.1\Vehicle.pdb
+E:\C_Sharp_Project\Lesson2\Inheritance\Vehicle\obj\Debug\netcoreapp3.1\Vehicle.genruntimeconfig.cache

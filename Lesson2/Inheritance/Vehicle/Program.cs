@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Vehicle
 {
@@ -18,25 +19,39 @@ namespace Vehicle
     {
         static void Main(string[] args)
         {
-            Vehicle boing737 = new Plane(23.5, 4);
-            //Console.WriteLine(boing737.);
+            List<Vehicle> list = new List<Vehicle>();
+            //Console.WriteLine("Hi");
+            Vehicle boing737 = new Plane("34434", 23.3, 4);
+            Vehicle porshe = new Car("842342", 200, 2);
+            list.Add(boing737);
+            list.Add(porshe);
+            //boing737.Сoordinates = ;
+            //Console.WriteLine(boing737.Сoordinates);
+            foreach(Vehicle element in list)
+            {
+                //if(element.GetType = Vehicle.P)
+                Plane plane = (Plane)element;
+                Console.WriteLine(plane.Сoordinates, plane.Height, plane.Count);
+            }
+            Console.ReadKey();
         }
     }
 
     class Vehicle
     {
         public string Сoordinates { get; set; }
+        //public Vehicle Vehicle { get; set; }
         
-
-    }
+     }
 
     class Plane : Vehicle
     {
         public double Height { get; set; }
         public int Count { get; set; }
 
-        public Plane(double height, int count)
+        public Plane( string coordinate, double height, int count)
         {
+            this.Сoordinates = coordinate;
             this.Height = height;
             this.Count = count;
         }
@@ -47,8 +62,9 @@ namespace Vehicle
         public int Power { get; set; }
         public int CountDoors { get; set; }
 
-        public Car(int power, int countDoors)
+        public Car(string coordinate, int power, int countDoors)
         {
+            this.Сoordinates = coordinate;
             this.Power = power;
             this.CountDoors = countDoors;
         }
