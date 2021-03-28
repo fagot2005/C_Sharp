@@ -22,16 +22,21 @@ namespace Vehicle
             List<Vehicle> list = new List<Vehicle>();
             Vehicle boing737 = new Plane("34434", 23.3, 4);
             Vehicle porshe = new Car("842342", 200, 2);
+            Vehicle avrora = new Ship("45678", 250, "San Fransisco");
             list.Add(boing737);
             list.Add(porshe);
+            list.Add(avrora);
             foreach (Vehicle element in list)
             {
                 Plane plane = element as Plane;
                 if (plane != null)
-                    Console.WriteLine(plane.Сoordinates, plane.Height, plane.Count);
+                    Console.WriteLine("Plane with coordinates {0}, height {1}, count {2}", plane.Сoordinates, plane.Height, plane.Count);
                 Car car = element as Car;
                 if (car != null)
-                    Console.WriteLine(car.Сoordinates, car.Power, car.CountDoors);
+                    Console.WriteLine("Car with coordinates {0}, power {1}, count doors {2}", car.Сoordinates, car.Power, car.CountDoors);
+                Ship ship = element as Ship;
+                if (ship != null)
+                    Console.WriteLine("Ship with coordinates {0}, count passanger {1}, port {2}", ship.Сoordinates, ship.CountPassanger, ship.Port);
             }
             Console.ReadKey();
         }
@@ -40,9 +45,7 @@ namespace Vehicle
     class Vehicle
     {
         public string Сoordinates { get; set; }
-        //public Vehicle Vehicle { get; set; }
-
-    }
+            }
 
     class Plane : Vehicle
     {
@@ -75,5 +78,12 @@ namespace Vehicle
     {
         public int CountPassanger { get; set; }
         public string Port { get; set; }
+
+        public Ship(string coordinate, int countPassanger, string port)
+        {
+            this.Сoordinates = coordinate;
+            this.CountPassanger = countPassanger;
+            this.Port = port;
+        }
     }
 }
