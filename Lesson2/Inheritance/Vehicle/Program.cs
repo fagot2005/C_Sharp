@@ -28,14 +28,11 @@ namespace Vehicle
             list.Add(avrora);
             foreach (Vehicle element in list)
             {
-                Plane plane = element as Plane;
-                if (plane != null)
+                if (element is Plane plane)
                     Console.WriteLine("Plane with coordinates {0}, height {1}, count {2}", plane.Сoordinates, plane.Height, plane.Count);
-                Car car = element as Car;
-                if (car != null)
+                if (element is Car car)
                     Console.WriteLine("Car with coordinates {0}, power {1}, count doors {2}", car.Сoordinates, car.Power, car.CountDoors);
-                Ship ship = element as Ship;
-                if (ship != null)
+                if (element is Ship ship)
                     Console.WriteLine("Ship with coordinates {0}, count passanger {1}, port {2}", ship.Сoordinates, ship.CountPassanger, ship.Port);
             }
             Console.ReadKey();
@@ -45,7 +42,7 @@ namespace Vehicle
     class Vehicle
     {
         public string Сoordinates { get; set; }
-            }
+    }
 
     class Plane : Vehicle
     {
