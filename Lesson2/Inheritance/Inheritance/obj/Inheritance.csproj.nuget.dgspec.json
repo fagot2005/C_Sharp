@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\C_Sharp_Project\\Lesson2\\Inheritance\\Inheritance\\Inheritance.csproj": {}
+    "C:\\C#_pro\\C_Sharp\\Lesson2\\Inheritance\\Inheritance\\Inheritance.csproj": {}
   },
   "projects": {
-    "E:\\C_Sharp_Project\\Lesson2\\Inheritance\\Inheritance\\Inheritance.csproj": {
+    "C:\\C#_pro\\C_Sharp\\Lesson2\\Inheritance\\Inheritance\\Inheritance.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\C_Sharp_Project\\Lesson2\\Inheritance\\Inheritance\\Inheritance.csproj",
+        "projectUniqueName": "C:\\C#_pro\\C_Sharp\\Lesson2\\Inheritance\\Inheritance\\Inheritance.csproj",
         "projectName": "Inheritance",
-        "projectPath": "E:\\C_Sharp_Project\\Lesson2\\Inheritance\\Inheritance\\Inheritance.csproj",
+        "projectPath": "C:\\C#_pro\\C_Sharp\\Lesson2\\Inheritance\\Inheritance\\Inheritance.csproj",
         "packagesPath": "C:\\Users\\1\\.nuget\\packages\\",
-        "outputPath": "E:\\C_Sharp_Project\\Lesson2\\Inheritance\\Inheritance\\obj\\",
+        "outputPath": "C:\\C#_pro\\C_Sharp\\Lesson2\\Inheritance\\Inheritance\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\1\\AppData\\Roaming\\NuGet\\NuGet.Config",

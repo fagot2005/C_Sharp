@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "NZXPBQwMCXFYGpoThgxWFN35egIWDnMzgHBshKiVA4GOqjHbiekKJO9v2u8GRCN7YfTklhVzXpILEPEXt2uUjw==",
+  "dgSpecHash": "nhqXtZ46pk3HBjN4f22ZcI+amnxx0yuYFrGXh2T7xMBEX7rHf/miBPIvfHpK8B9al99Jwhnkx6mUKwaWbpF6IA==",
   "success": true,
-  "projectFilePath": "E:\\C_Sharp_Project\\Lesson2\\Inheritance\\Vehicle\\Vehicle.csproj",
+  "projectFilePath": "C:\\C#_pro\\C_Sharp\\Lesson2\\Inheritance\\Vehicle\\Vehicle.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
